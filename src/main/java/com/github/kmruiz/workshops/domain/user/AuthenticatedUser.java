@@ -1,5 +1,4 @@
 package com.github.kmruiz.workshops.domain.user;
 
-public interface User {
-
+public interface AuthenticatedUser extends User {
 }
