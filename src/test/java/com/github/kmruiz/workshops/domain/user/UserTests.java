@@ -10,10 +10,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class UserImplTest {
+public class UserTests {
     @Test
     public void contact() throws Exception {
-        final Interested sut = new UserImpl("some-user");
+        final Interested sut = new ActiveUserImpl("some-user");
         final ContactableAd ad = new PublishedAdImpl("some-ad-id", new PublisherImpl());
 
         final Contact contact = sut.contact(ad, "Hola!");
