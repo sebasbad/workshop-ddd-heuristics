@@ -16,14 +16,4 @@ public class AdminUserImplTest {
 
         Assert.assertNotNull(actual);
     }
-
-    @Test(expected = Exception.class)
-    public void shouldNotPermitBanAnyAdminUser() throws Exception {
-        final AdminUserImpl sut = new AdminUserImpl("some-admin");
-        final AdminUserImpl user = new AdminUserImpl("some-other-admin");
-
-        final BannedUser actual = sut.ban(user);
-
-        Assert.assertNotNull(actual);
-    }
 }

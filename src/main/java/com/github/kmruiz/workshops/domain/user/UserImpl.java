@@ -1,6 +1,6 @@
 package com.github.kmruiz.workshops.domain.user;
 
-public class UserImpl implements User {
+public class UserImpl implements User, BanneableUser {
 
     private final String id;
 

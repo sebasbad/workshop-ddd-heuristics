@@ -1,5 +1,5 @@
 package com.github.kmruiz.workshops.domain.user;
 
 public interface UserBanner {
-    BannedUser ban(User user);
+    BannedUser ban(BanneableUser user);
 }

@@ -1,18 +1,15 @@
 package com.github.kmruiz.workshops.domain.user;
 
-public class AdminUserImpl extends UserImpl implements Admin {
+public class AdminUserImpl implements Admin {
+
+    private final String id;
 
     public AdminUserImpl(String id) {
-        super(id);
+        this.id = id;
     }
 
     @Override
-    public BannedUser ban(User user) {
+    public BannedUser ban(BanneableUser user) {
         return user.ban();
-    }
-
-    @Override
-    public BannedUser ban() {
-        throw new IllegalStateException();
     }
 }

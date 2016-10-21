@@ -1,8 +1,10 @@
 package com.github.kmruiz.workshops.domain.user;
 
-public class BannedUserImpl extends UserImpl implements BannedUser {
+public class BannedUserImpl implements BannedUser {
+
+    private final String id;
 
     public BannedUserImpl(String id) {
-        super(id);
+        this.id = id;
     }
 }
