@@ -18,9 +18,7 @@ public class UserImpl implements User, BanneableUser, Interested {
     }
 
     @Override
-    public Contact contact(
-        ContactableAd ad, String message
-    ) {
+    public Contact contact(ContactableAd ad, String message) {
         return ad.contact(message);
     }
 }

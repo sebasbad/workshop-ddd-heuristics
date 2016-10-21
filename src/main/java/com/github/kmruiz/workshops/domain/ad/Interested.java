@@ -1,5 +1,5 @@
 package com.github.kmruiz.workshops.domain.ad;
 
 public interface Interested {
-    Contact contact(ContactableAd contactableAd, String message);
+    Contact contact(ContactableAd ad, String message);
 }
