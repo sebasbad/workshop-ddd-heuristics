@@ -12,3 +12,16 @@ Toolset
 * JPA
 
 As an Admin I want to ban a User that is not an Admin
+As a User I want to contact the Publisher of an Ad
+
+user
+User => domain
+
+
+
+contact => action
+
+contact = ad.contact(message)
+
+Publisher => domain
+Ad => domain

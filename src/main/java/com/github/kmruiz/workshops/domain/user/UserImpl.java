@@ -1,6 +1,10 @@
 package com.github.kmruiz.workshops.domain.user;
 
-public class UserImpl implements User, BanneableUser {
+import com.github.kmruiz.workshops.domain.ad.Contact;
+import com.github.kmruiz.workshops.domain.ad.ContactableAd;
+import com.github.kmruiz.workshops.domain.ad.Interested;
+
+public class UserImpl implements User, BanneableUser, Interested {
 
     private final String id;
 
@@ -11,5 +15,12 @@ public class UserImpl implements User, BanneableUser {
     @Override
     public BannedUser ban() {
         return new BannedUserImpl(this.id);
+    }
+
+    @Override
+    public Contact contact(
+        ContactableAd ad, String message
+    ) {
+        return ad.contact(message);
     }
 }
