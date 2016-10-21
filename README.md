@@ -10,3 +10,5 @@ Toolset
 * Spring
 * H2
 * JPA
+
+As an Admin I want to ban a User that is not an Admin
